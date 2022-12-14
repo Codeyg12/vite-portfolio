@@ -1,0 +1,249 @@
+:root {
+  --color1: #2F414F;
+  --color2: #F1F1EF;
+  --color3: #3894A3;
+  --color4: #C7DAD4;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color1);
+  color: var(--color2);
+  overflow: hidden;
+  display: block;
+}
+
+/* ----------------------------------------------NAVBAR---------------------------------------------------------- */
+.nav-bar {
+  position: absolute;
+  top: 0;
+  background-color: var(--color3);
+  width: 100%;
+  min-height: 100px;
+}
+
+.nav-bar a {
+  font-size: 38px;
+  color: var(--color4);
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  transition: all 0.3s ease-out;
+}
+
+.nav-bar a:hover svg {
+  opacity: 0;
+}
+
+.nav-bar a:hover::after {
+  opacity: 1;
+}
+
+.nav-bar a::after {
+  content: '';
+  font-size: 30px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+
+.about-link {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+
+a.about-link::after {
+  content: 'ABOUT';
+}
+
+.skill-link {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+a.skill-link::after {
+  content: 'SKILLS';
+}
+
+.project-link {
+  position: absolute;
+  top: 30%;
+  left: 55%;
+}
+
+a.project-link::after {
+  content: 'PROJECTS';
+}
+
+.contact-link {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+}
+
+a.contact-link::after {
+  content: 'CONTACT';
+}
+
+a.active {
+  color: var(--color1);
+}
+
+/* -----------------------------------------------SIDEBAR------------------------------------------------------ */
+.sidebar {
+  position: absolute;
+  background-color: var(--color3);
+  height: 100%;
+  width: 50px;
+  top: 0;
+}
+
+.sidebar-list {
+  height: 100%;
+  padding: 13px;
+}
+
+.sidebar-list a {
+  font-size: 30px;
+  color: var(--color4);
+}
+
+.sidebar-list a:hover {
+  color: var(--color1);
+}
+
+.ga-icon {
+  position: absolute;
+  bottom: 6%;
+}
+
+.li-icon {
+  position: absolute;
+  bottom: 2%;
+}
+
+.name {
+  position: absolute;
+  font-size: 2.5em;
+  z-index: 3;
+  margin: 0 25%;
+}
+
+/* --------------------------------------------------ABOUT---------------------------------------------------- */
+.about-head {
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  margin-top: 10%;
+  font-size: 3rem;
+  width: 100%;
+}
+
+.about-p {
+  margin: 5% 10%;
+  line-height: 3rem;
+  font-size: 1.5em;
+}
+
+.about-pic {
+  float: left;
+  margin: auto 10%;
+  border-radius: 25%;
+}
+
+/* -----------------------------------------------------CONTACT------------------------------------------ */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10%;
+}
+
+.contact-head {
+  font-size: 2em;
+}
+
+.contact-header {
+  width: 100%;
+  margin-left: 20%;
+  margin-top: 10%;
+  max-height: 80%;
+  background-color: var(--color3);
+  border-radius: 10px;
+  color: var(--color2);
+  padding: 0 5%;
+}
+
+.contact-form {
+  width: 80%;
+  margin-left: 10%;
+  color: var(--color2);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5%;
+}
+
+.input-form {
+  background-color: var(--color4);
+  width: 50%;
+  margin-bottom: 5%;
+  margin-left: 24%;
+  line-height: 2;
+  font-size: 1.1em;
+}
+
+.contact-text {
+  width: 75%;
+  height: 15em;
+  margin-bottom: 1.5%;
+  background-color: var(--color4);
+  font-size: 1.2em;
+}
+
+.contact-err {
+  color: red;
+  margin: 0 0 2%;
+}
+
+.contact-btn {
+  font-size: 1.2rem;
+  width: 75%;
+  margin-bottom: 5%;
+  height: 2em;
+  border-style: none;
+  background-color: var(--color4);
+  color: var(--color1);
+}
+
+.long-grid {
+  grid-column: 1 / 3;
+}
+
+.input-form::placeholder, .contact-text::placeholder {
+  color: var(--color1);
+}
+
+.input-form:focus, .contact-text:focus {
+  outline: 2px solid var(--color3);
+}
+
+.email-copy:hover {
+  color: var(--color1);
+}
+
+.email-copy {
+  text-decoration: none;
+}
