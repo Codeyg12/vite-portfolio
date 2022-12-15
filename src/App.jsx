@@ -1,12 +1,10 @@
 import { Routes, Route } from "react-router";
-import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Project from './components/Project'
-import Skill from './components/Skill'
-import Layout from './components/Layout'
-import Grasshopper from './components/Grasshopper'
-
+import Project from "./components/Project";
+import Skill from "./components/Skill";
+import Layout from "./components/Layout";
+import Grasshopper from "./components/Grasshopper";
 
 function App() {
   return (

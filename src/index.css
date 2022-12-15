@@ -1,8 +1,8 @@
 :root {
-  --color1: #2F414F;
-  --color2: #F1F1EF;
-  --color3: #3894A3;
-  --color4: #C7DAD4;
+  --color1: #2f414f;
+  --color2: #f1f1ef;
+  --color3: #3894a3;
+  --color4: #c7dad4;
 }
 
 body {
@@ -25,23 +25,22 @@ body {
 .nav-bar a {
   font-size: 38px;
   color: var(--color4);
-  text-decoration: none;
 }
 
-.nav-bar .sidebar-list a:hover {
-  transition: all 0.3s ease-out;
-}
-
-.nav-bar a:hover svg, .sidebar-list a:hover svg {
+.nav-bar a:hover svg,
+.sidebar-list a:hover svg {
   opacity: 0;
 }
 
-.nav-bar a:hover::after, .sidebar-list a:hover::after {
+.nav-bar a:hover::after,
+.sidebar-list a:hover::after {
   opacity: 1;
 }
 
-.nav-bar a::after {
-  content: '';
+.nav-bar a::after,
+.certs-list a::after,
+.project-set a::after {
+  content: "";
   font-size: 30px;
   letter-spacing: 2px;
   position: absolute;
@@ -62,7 +61,7 @@ body {
 }
 
 a.about-link::after {
-  content: 'ABOUT';
+  content: "ABOUT";
 }
 
 .skill-link {
@@ -72,7 +71,7 @@ a.about-link::after {
 }
 
 a.skill-link::after {
-  content: 'SKILLS';
+  content: "SKILLS";
 }
 
 .project-link {
@@ -82,7 +81,7 @@ a.skill-link::after {
 }
 
 a.project-link::after {
-  content: 'PROJECTS';
+  content: "PROJECTS";
 }
 
 .contact-link {
@@ -92,7 +91,7 @@ a.project-link::after {
 }
 
 a.contact-link::after {
-  content: 'CONTACT';
+  content: "CONTACT";
 }
 
 a.active {
@@ -102,8 +101,7 @@ a.active {
 /* -----------------------------------------------SIDEBAR------------------------------------------------------ */
 
 .sidebar-list {
-  height: 100%;
- padding: 13px;
+  padding: 13px;
 }
 
 .sidebar-list a {
@@ -112,7 +110,7 @@ a.active {
 }
 
 .sidebar-list a::after {
-  content: '';
+  content: "";
   font-size: 15px;
   letter-spacing: 2px;
   position: absolute;
@@ -133,7 +131,7 @@ a.active {
 }
 
 a.ga-icon::after {
- content: 'GitHub'; 
+  content: "GitHub";
 }
 
 .li-icon {
@@ -143,7 +141,7 @@ a.ga-icon::after {
 }
 
 a.li-icon::after {
-  content: 'LinkedIn';
+  content: "LinkedIn";
 }
 
 /* --------------------------------------------------ABOUT---------------------------------------------------- */
@@ -152,12 +150,11 @@ a.li-icon::after {
   justify-content: center;
   margin-top: 6%;
   font-size: 3rem;
-  width: 100%;
 }
 
 .about-p {
-  margin: 5% 10%;
-  line-height: 3rem;
+  margin: 5%;
+  line-height: 1.5;
   font-size: 1.5em;
 }
 
@@ -176,28 +173,17 @@ a.li-icon::after {
   margin-top: 10%;
 }
 
-.contact-head {
-  font-size: 2em;
-}
-
 .contact-header {
   width: 100%;
   margin-left: 20%;
   margin-top: 10%;
   max-height: 70%;
-  background-color: var(--color3);
-  border-radius: 10px;
-  color: var(--color2);
   padding: 0 5%;
 }
 
 .contact-form {
-  width: 80%;
   margin-left: 10%;
-  color: var(--color2);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 5%;
 }
 
 .input-form {
@@ -225,7 +211,6 @@ a.li-icon::after {
 .contact-btn {
   font-size: 1.2rem;
   width: 75%;
-  margin-bottom: 5%;
   height: 2em;
   border-style: none;
   background-color: var(--color4);
@@ -236,20 +221,22 @@ a.li-icon::after {
   grid-column: 1 / 3;
 }
 
-.input-form::placeholder, .contact-text::placeholder {
+.input-form::placeholder,
+.contact-text::placeholder {
   color: var(--color1);
 }
 
-.input-form:focus, .contact-text:focus {
+.input-form:focus,
+.contact-text:focus {
   outline: 2px solid var(--color3);
 }
 
 .email-copy:hover {
-  color: var(--color1);
+  color: var(--color3);
 }
 
 .email-copy {
-  text-decoration: none; 
+  text-decoration: none;
   margin-left: 2%;
 }
 
@@ -257,21 +244,16 @@ a.li-icon::after {
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 10%;
-  width: 85%;
-  margin-left: 8%;
+  margin: 10% 5% 0;
   text-align: center;
-  gap: 8%;
+  gap: 5%;
+  font-size: 1.2em;
 }
 
+/* ===============CERTS========================== */
 .sololearn-icon {
   width: 100px;
   color: var(--color3);
-}
-
-.certificates {
-  font-size: 1.1em;
-  line-height: 1.2;
 }
 
 .certificates a {
@@ -283,10 +265,7 @@ a.li-icon::after {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25%;
-}
-
-.certs-list a:hover {
-  transition: all 0.3s ease-out;
+  margin-top: 10%;
 }
 
 .certs-list a:hover svg {
@@ -301,56 +280,31 @@ a.li-icon::after {
   opacity: 1;
 }
 
-.certs-list a::after {
-  content: '';
-  font-size: 30px;
-  letter-spacing: 2px;
-  position: absolute;
-  bottom: 0;
-  left: -30px;
-  display: block;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.fcc-link {
-  position: relative;
-}
-
-
-a.fcc-link::after {
-  content: 'freeCodeCamp';
-  top: 30%;
-}
-
-.sololearn-link {
-  position: relative;
-}
-
-a.sololearn-link::after {
-  content: 'Sololearn';
-  top: 30%;
-  left: 3%;
-}
-
-.grasshopper-link {
-  position: relative;
-}
-
-a.grasshopper-link::after {
-  content: 'Grasshopper';
-  top: 28%;
-}
-
+.fcc-link,
+.sololearn-link,
+.grasshopper-link,
 .credly-link {
   position: relative;
 }
 
+a.fcc-link::after {
+  content: "freeCodeCamp";
+  top: 30%;
+}
+
+a.sololearn-link::after {
+  content: "Sololearn";
+  top: 30%;
+  left: 3%;
+}
+
+a.grasshopper-link::after {
+  content: "Grasshopper";
+  top: 28%;
+}
+
 a.credly-link::after {
-  content: 'Credly';
+  content: "Credly";
   top: 25%;
   left: 6%;
 }
@@ -358,9 +312,9 @@ a.credly-link::after {
 .gh-list {
   display: grid;
   justify-items: center;
-  margin: 8% 10% 0;
+  margin: 6% 10% 0;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5%;
+  row-gap: 5%;
 }
 
 .gh-image {
@@ -372,14 +326,9 @@ a.credly-link::after {
   width: 250px;
 }
 
-.certificates p {
-  margin-bottom: 10%;
-}
-
+/* ==============RESUME===================== */
 .resume-section {
-  color: var(--color2);
   line-height: 1.5;
-  font-size: 1.2em;
 }
 
 .resume-section a {
@@ -390,11 +339,7 @@ a.credly-link::after {
 .resume-section a:hover {
   color: var(--color3);
 }
-
-.skills {
-  font-size: 1.2em;
-}
-
+/* ===========================TECH============================== */
 .skills ul {
   list-style: none;
 }
@@ -405,22 +350,14 @@ a.credly-link::after {
   gap: 5%;
 }
 
-.skill-bars ino {
-  background-color: var(--color1);
-}
-
 .progress {
-  width: 100%;
-  height: 25px;
   margin-top: 2%;
   background-color: var(--color4);
 }
 
 .inner-prog {
   background-color: var(--color3);
-  z-index: 3;
   height: 25px;
-  color: var(--color2);
 }
 
 /* ---------------------------------------------------------------PROJECTS----------------------------------------------------------------------- */
@@ -428,7 +365,6 @@ a.credly-link::after {
   width: 100vw;
   height: 90vh;
   margin-top: 3.8%;
-  background-color: var(--color2);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -443,75 +379,66 @@ a.credly-link::after {
 
 .project-set a:hover::after {
   opacity: 1;
-  color: var(--color1);
+  color: var(--color4);
   line-height: 2;
 }
 
-.project-set a::after {
-  content: '';
-  font-size: 30px;
-  letter-spacing: 2px;
-  position: absolute;
-  bottom: 0;
-  left: -30px;
-  display: block;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.e-proj, .orm-proj, .note-proj, .tech-proj, .scribe-proj, .task-proj, .hang-proj, .book-proj {
+.e-proj,
+.orm-proj,
+.note-proj,
+.tech-proj,
+.scribe-proj,
+.task-proj,
+.hang-proj,
+.book-proj {
   position: relative;
 }
 
 a.e-proj::after {
-  content: 'MySQL Employee Tracker';
+  content: "MySQL Employee Tracker";
   top: -220px;
   left: 10px;
   width: 95%;
 }
 
-
 a.orm-proj::after {
-  content: 'ORM E-commerece backend';
+  content: "ORM E-commerece backend";
   top: -230px;
   left: 10px;
 }
 
 a.note-proj::after {
-  content: 'Just Another Text Editor';
+  content: "Just Another Text Editor";
   top: -200px;
   left: 10px;
 }
 
 a.tech-proj::after {
-  content: 'TechTalk a tech blog';
+  content: "TechTalk a tech blog";
   top: -200px;
   left: 15px;
 }
 
 a.scribe-proj::after {
-  content: 'Scribe a travel journal';
+  content: "Scribe a travel journal";
   top: -200px;
   left: 2px;
 }
 
 a.task-proj::after {
-  content: 'onTask a project manager';
+  content: "onTask a project manager";
   top: -200px;
-  left: 10px;
+  left: 5px;
 }
 
 a.hang-proj::after {
-  content: 'Star Wars Hangman';
+  content: "Star Wars Hangman";
   top: -180px;
   left: 10px;
 }
 
 a.book-proj::after {
-  content: 'Book Search w/ Google Books API';
+  content: "Book Search w/ Google Books API";
   top: -180px;
   left: 50px;
   width: 70%;
