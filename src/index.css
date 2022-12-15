@@ -425,13 +425,94 @@ a.credly-link::after {
 
 /* ---------------------------------------------------------------PROJECTS----------------------------------------------------------------------- */
 .borderer {
-  border: 1px solid black;
   width: 100vw;
-  height: 100vh;
-  background-color: var(--color3);
-  display: flex;
-  justify-content: flex-end;
-  /* justify-items: center; */
-  /* align-items: center; */
-  margin: 5%;
+  height: 90vh;
+  margin-top: 3.8%;
+  background-color: var(--color2);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.borderer img {
+  max-width: 380px;
+  height: 98%;
+}
+.borderer a:hover img {
+  opacity: 0.1;
+}
+
+.borderer a:hover::after {
+  opacity: 1;
+  color: var(--color1);
+  line-height: 2;
+}
+
+.borderer a::after {
+  content: '';
+  font-size: 30px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.e-proj, .orm-proj, .note-proj, .tech-proj, .scribe-proj, .task-proj, .hang-proj, .book-proj {
+  position: relative;
+}
+
+a.e-proj::after {
+  content: 'MySQL Employee Tracker';
+  top: -220px;
+  left: 10px;
+  width: 95%;
+}
+
+
+a.orm-proj::after {
+  content: 'ORM E-commerece backend';
+  top: -230px;
+  left: 10px;
+}
+
+a.note-proj::after {
+  content: 'Just Another Text Editor';
+  top: -200px;
+  left: 10px;
+}
+
+a.tech-proj::after {
+  content: 'TechTalk a tech blog';
+  top: -200px;
+  left: 15px;
+}
+
+a.scribe-proj::after {
+  content: 'Scribe a travel journal';
+  top: -200px;
+  left: 2px;
+}
+
+a.task-proj::after {
+  content: 'onTask a project manager';
+  top: -200px;
+  left: 10px;
+}
+
+a.hang-proj::after {
+  content: 'Star Wars Hangman';
+  top: -180px;
+  left: 10px;
+}
+
+a.book-proj::after {
+  content: 'Book Search w/ Google Books API';
+  top: -180px;
+  left: 50px;
+  width: 70%;
 }
