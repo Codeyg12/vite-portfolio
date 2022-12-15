@@ -180,7 +180,7 @@ a.active {
   width: 100%;
   margin-left: 20%;
   margin-top: 10%;
-  max-height: 80%;
+  max-height: 70%;
   background-color: var(--color3);
   border-radius: 10px;
   color: var(--color2);
@@ -247,4 +247,102 @@ a.active {
 .email-copy {
   text-decoration: none; 
   margin-left: 2%;
+}
+
+/* -------------------------------------------------------------------SKILLS------------------------------------------------------------------------ */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10%;
+  border: 1px red solid;
+  width: 80%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.sololearn-icon {
+  width: 100px;
+  color: var(--color3);
+}
+
+.certificates a {
+  font-size: 500%;
+  color: var(--color2);
+}
+
+.certs-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15%;
+}
+
+.certs-list a:hover {
+  transition: all 0.3s ease-out;
+}
+
+.certs-list a:hover svg {
+  opacity: 0;
+}
+
+.certs-list a:hover .sololearn-icon {
+  opacity: 0;
+}
+
+.certs-list a:hover::after {
+  opacity: 1;
+}
+
+.certs-list a::after {
+  content: '';
+  font-size: 30px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.fcc-link {
+  position: relative;
+}
+
+
+a.fcc-link::after {
+  content: 'freeCodeCamp';
+  top: 30%;
+}
+
+.sololearn-link {
+  position: relative;
+}
+
+a.sololearn-link::after {
+  content: 'Sololearn';
+  top: 30%;
+  left: 3%;
+}
+
+.grasshopper-link {
+  position: relative;
+}
+
+a.grasshopper-link::after {
+  content: 'Grasshopper';
+  top: 28%;
+  left: 3%;
+}
+
+.credly-link {
+  position: relative;
+}
+
+a.credly-link::after {
+  content: 'Credly';
+  top: 25%;
+  left: 6%;
 }
