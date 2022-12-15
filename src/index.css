@@ -424,7 +424,7 @@ a.credly-link::after {
 }
 
 /* ---------------------------------------------------------------PROJECTS----------------------------------------------------------------------- */
-.borderer {
+.project-set {
   width: 100vw;
   height: 90vh;
   margin-top: 3.8%;
@@ -433,21 +433,21 @@ a.credly-link::after {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.borderer img {
+.project-set img {
   max-width: 380px;
   height: 98%;
 }
-.borderer a:hover img {
+.project-set a:hover img {
   opacity: 0.1;
 }
 
-.borderer a:hover::after {
+.project-set a:hover::after {
   opacity: 1;
   color: var(--color1);
   line-height: 2;
 }
 
-.borderer a::after {
+.project-set a::after {
   content: '';
   font-size: 30px;
   letter-spacing: 2px;

@@ -48,13 +48,19 @@ export default function Navbar() {
         </nav>
       </div>
       <ul className="sidebar-list">
-        <a href="https://github.com/Codeyg12" rel="noreferrer" target="_blank" className="ga-icon">
+        <a
+          href="https://github.com/Codeyg12"
+          rel="noreferrer"
+          target="_blank"
+          className="ga-icon"
+        >
           <FontAwesomeIcon icon={faGithubSquare} />
         </a>
         <a
           href="https://linkedin.com/in/codey-gallup"
           rel="noreferrer"
-          target="_blank" className="li-icon"
+          target="_blank"
+          className="li-icon"
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>

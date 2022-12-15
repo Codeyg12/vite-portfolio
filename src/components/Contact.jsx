@@ -63,9 +63,11 @@ export default function Contact() {
       <div className="contact-header">
         <h1 className="contact-head">Contact Me</h1>
         <p>
-          I'm actively looking for a career in web devlopment and would love to
+          I'm actively looking for a career in web development and would love to
           hear from you! You are always welcome to email me directly at the
-          email below, clicking it will save it to your clipboard, or you can use the form to the left to send an email directly from here. My Github and Linkedin are both linked at the bottom left of the screen.
+          email below, clicking it will save it to your clipboard, or you can
+          use the form to the left to send an email directly from here. My
+          GitHub and Linkedin are both linked at the bottom left of the screen.
         </p>
         <span>Email:</span>
         <abbr
