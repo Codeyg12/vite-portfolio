@@ -121,7 +121,7 @@ export default function Skill() {
             </div>
           </li>
           <li>
-            <label>Apollo GraphQl</label>
+            <label className="apollo">Apollo GraphQl</label>
             <div className="progress">
               <div className="inner-prog" style={{ width: "55%" }}>
                 55%
