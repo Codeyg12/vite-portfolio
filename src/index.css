@@ -254,15 +254,20 @@ a.active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 10%;
-  border: 1px red solid;
-  width: 80%;
-  margin-left: 15%;
+  width: 85%;
+  margin-left: 8%;
   text-align: center;
+  gap: 8%;
 }
 
 .sololearn-icon {
   width: 100px;
   color: var(--color3);
+}
+
+.certificates {
+  font-size: 1.1em;
+  line-height: 1.2;
 }
 
 .certificates a {
@@ -273,7 +278,7 @@ a.active {
 .certs-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15%;
+  gap: 25%;
 }
 
 .certs-list a:hover {
@@ -334,7 +339,6 @@ a.sololearn-link::after {
 a.grasshopper-link::after {
   content: 'Grasshopper';
   top: 28%;
-  left: 3%;
 }
 
 .credly-link {
@@ -345,4 +349,72 @@ a.credly-link::after {
   content: 'Credly';
   top: 25%;
   left: 6%;
+}
+
+.gh-list {
+  display: grid;
+  justify-items: center;
+  margin: 8% 10% 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+}
+
+.gh-image {
+  width: 280px;
+  height: 270px;
+}
+
+.gh-large {
+  width: 250px;
+}
+
+.certificates p {
+  margin-bottom: 10%;
+}
+
+.resume-section {
+  color: var(--color2);
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+.resume-section a {
+  color: var(--color2);
+  text-decoration: none;
+}
+
+.resume-section a:hover {
+  color: var(--color3);
+}
+
+.skills {
+  font-size: 1.2em;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+}
+
+.skill-bars ino {
+  background-color: var(--color1);
+}
+
+.progress {
+  width: 100%;
+  height: 25px;
+  margin-top: 2%;
+  background-color: var(--color4);
+}
+
+.inner-prog {
+  background-color: var(--color3);
+  z-index: 3;
+  height: 25px;
+  color: var(--color2);
 }
