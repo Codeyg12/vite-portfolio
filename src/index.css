@@ -245,5 +245,6 @@ a.active {
 }
 
 .email-copy {
-  text-decoration: none;
+  text-decoration: none; 
+  margin-left: 2%;
 }
