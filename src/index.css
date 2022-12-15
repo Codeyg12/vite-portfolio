@@ -28,15 +28,15 @@ body {
   text-decoration: none;
 }
 
-.nav-bar a:hover {
+.nav-bar .sidebar-list a:hover {
   transition: all 0.3s ease-out;
 }
 
-.nav-bar a:hover svg {
+.nav-bar a:hover svg, .sidebar-list a:hover svg {
   opacity: 0;
 }
 
-.nav-bar a:hover::after {
+.nav-bar a:hover::after, .sidebar-list a:hover::after {
   opacity: 1;
 }
 
@@ -55,13 +55,11 @@ body {
   transition: all 0.3s ease-out;
 }
 
-
 .about-link {
   position: absolute;
   top: 30%;
   left: 25%;
 }
-
 
 a.about-link::after {
   content: 'ABOUT';
@@ -102,17 +100,10 @@ a.active {
 }
 
 /* -----------------------------------------------SIDEBAR------------------------------------------------------ */
-.sidebar {
-  position: absolute;
-  background-color: var(--color3);
-  height: 100%;
-  width: 50px;
-  top: 0;
-}
 
 .sidebar-list {
   height: 100%;
-  padding: 13px;
+ padding: 13px;
 }
 
 .sidebar-list a {
@@ -120,33 +111,46 @@ a.active {
   color: var(--color4);
 }
 
-.sidebar-list a:hover {
-  color: var(--color1);
+.sidebar-list a::after {
+  content: '';
+  font-size: 15px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 7px;
+  left: -20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .ga-icon {
   position: absolute;
-  bottom: 6%;
+  top: 2%;
+  right: 2%;
+}
+
+a.ga-icon::after {
+ content: 'GitHub'; 
 }
 
 .li-icon {
   position: absolute;
-  bottom: 2%;
+  top: 8%;
+  right: 2%;
 }
 
-.name {
-  position: absolute;
-  font-size: 2.5em;
-  z-index: 3;
-  margin: 0 25%;
+a.li-icon::after {
+  content: 'LinkedIn';
 }
 
 /* --------------------------------------------------ABOUT---------------------------------------------------- */
 .about-head {
   display: flex;
   justify-content: center;
-  margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 6%;
   font-size: 3rem;
   width: 100%;
 }
@@ -417,4 +421,17 @@ a.credly-link::after {
   z-index: 3;
   height: 25px;
   color: var(--color2);
+}
+
+/* ---------------------------------------------------------------PROJECTS----------------------------------------------------------------------- */
+.borderer {
+  border: 1px solid black;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color3);
+  display: flex;
+  justify-content: flex-end;
+  /* justify-items: center; */
+  /* align-items: center; */
+  margin: 5%;
 }

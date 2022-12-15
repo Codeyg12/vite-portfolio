@@ -33,76 +33,100 @@ export default function Skill() {
         <h1>Skills</h1>
         <ul className="tech-grid">
           <li>
-          <label>HTML</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "85%"}}>85%</div>
-          </div>
+            <label>HTML</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "85%" }}>
+                85%
+              </div>
+            </div>
           </li>
           <li>
-          <label>CSS</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "75%"}}>75%</div>
-          </div>
+            <label>CSS</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "75%" }}>
+                75%
+              </div>
+            </div>
           </li>
           <li>
-          <label>JavaScript</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "75%"}}>75%</div>
-          </div>
+            <label>JavaScript</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "75%" }}>
+                75%
+              </div>
+            </div>
           </li>
           <li>
-          <label>jQuery</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "60%"}}>60%</div>
-          </div>
+            <label>jQuery</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "60%" }}>
+                60%
+              </div>
+            </div>
           </li>
           <li>
-          <label>MySql</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "65%"}}>65%</div>
-          </div>
+            <label>MySql</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "65%" }}>
+                65%
+              </div>
+            </div>
           </li>
           <li>
-          <label>MongoDB</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "65%"}}>65%</div>
-          </div>
+            <label>MongoDB</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "65%" }}>
+                65%
+              </div>
+            </div>
           </li>
           <li>
-          <label>Express</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "70%"}}>70%</div>
-          </div>
+            <label>Express</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "70%" }}>
+                70%
+              </div>
+            </div>
           </li>
           <li>
-          <label>React</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "60%"}}>60%</div>
-          </div>
+            <label>React</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "60%" }}>
+                60%
+              </div>
+            </div>
           </li>
           <li>
-          <label>Node</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "65%"}}>65%</div>
-          </div>
+            <label>Node</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "65%" }}>
+                65%
+              </div>
+            </div>
           </li>
           <li>
-          <label>Bulma</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "70%"}}>70%</div>
-          </div>
+            <label>Bulma</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "70%" }}>
+                70%
+              </div>
+            </div>
           </li>
           <li>
-          <label>Git</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "55%"}}>55%</div>
-          </div>
+            <label>Git</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "60%" }}>
+                60%
+              </div>
+            </div>
           </li>
           <li>
-          <label>Apollo GraphQl</label>
-          <div className="progress">
-            <div className="inner-prog" style={{ width: "55%"}}>55%</div>
-          </div>
+            <label>Apollo GraphQl</label>
+            <div className="progress">
+              <div className="inner-prog" style={{ width: "55%" }}>
+                55%
+              </div>
+            </div>
           </li>
         </ul>
       </div>
