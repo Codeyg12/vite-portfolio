@@ -1,11 +1,11 @@
-import ORM from "../assets/orm.png";
-import Jate from "../assets/jate.png";
-import TechTalk from "../assets/techtalk.png";
-import Scribe from "../assets/scribe.png";
-import OnTask from "../assets/ontask.png";
-import Employee from "../assets/mysqletrack.png";
-import Hangman from "../assets/starhang.png";
-import Book from "../assets/booksearch.png";
+import ORM from "./assets/orm.png";
+import Jate from "./assets/jate.png";
+import TechTalk from "./assets/techtalk.png";
+import Scribe from "./assets/scribe.png";
+import OnTask from "./assets/ontask.png";
+import Employee from "./assets/mysqletrack.png";
+import Hangman from "./assets/starhang.png";
+import Book from "./assets/booksearch.png";
 
 export default function Project() {
   return (

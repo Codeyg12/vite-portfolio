@@ -67,7 +67,7 @@ export default function Contact() {
           hear from you! You are always welcome to email me directly at the
           email below, clicking it will save it to your clipboard, or you can
           use the form to the left to send an email directly from here. My
-          GitHub and Linkedin are both linked at the bottom left of the screen.
+          GitHub and Linkedin are both linked at the top right of the screen.
         </p>
         <span>Email:</span>
         <abbr

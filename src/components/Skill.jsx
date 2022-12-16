@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 import { faFreeCodeCamp, faGoogle } from "@fortawesome/free-brands-svg-icons";
-import Sololearn from "../assets/solo.png";
+import Sololearn from "./assets/solo.png";
 import { Link } from "react-router-dom";
-import UpdatedResume from "../assets/updatedResume.pdf";
+import UpdatedResume from "./assets/updatedResume.pdf";
 
 export default function Skill() {
   return (
