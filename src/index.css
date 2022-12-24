@@ -446,9 +446,92 @@ a.book-proj::after {
 
 @media all and (max-width: 800px) {
   body {
-    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
 
+  .nav-bar a {
+    font-size: 25px;
+  }
+  
+  .nav-bar a::after,
+  .certs-list a::after,
+  .project-set a::after {
+    content: "";
+    font-size: 15px;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: -20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  
+  .about-link {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+  }
+  
+  a.about-link::after {
+    content: "ABOUT";
+  }
+  
+  .skill-link {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+  }
+  
+  a.skill-link::after {
+    content: "SKILLS";
+  }
+  
+  .project-link {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+  }
+  
+  a.project-link::after {
+    content: "PROJECTS";
+  }
+  
+  .contact-link {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+  }
+  
+  a.contact-link::after {
+    content: "CONTACT";
+  }
+  
+  a.active {
+    color: var(--color1);
+  }
+  
+  /* -----------------------------------------------SIDEBAR------------------------------------------------------ */
+  .sidebar-list a {
+    font-size: 18px;
+  }
+  
+  .ga-icon {
+    position: absolute;
+    top: 2%;
+    right: 2.5%;
+  }
+  
+  .li-icon {
+    position: absolute;
+    top: 7%;
+    right: 2.5%;
+  }
+  
   /* ----------------------------ABOUT--------------------------------------------- */
   .about-head {
     margin-top: 25%;
@@ -478,15 +561,15 @@ a.book-proj::after {
   .contact-header {
     width: 100%;
     margin: 5% 0 0;
-    padding: 0 1%;
+    padding: 0 5%;
   }
 
   .contact-header p {
-    width: 90%;
+    width: 100%;
   }
 
   .contact-form {
-    margin: 2% 5% 0 0;
+    margin: 10% 0;
   }
 
   /* -------------------------------------------------------------------SKILLS------------------------------------------------------------------------ */

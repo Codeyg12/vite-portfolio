@@ -79,6 +79,7 @@ export default function Contact() {
         >
           codey.gallup@gmail.com
         </abbr>
+        <address>Colorado Springs, CO 80903</address>
       </div>
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
         <input
