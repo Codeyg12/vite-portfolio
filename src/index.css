@@ -111,11 +111,11 @@ a.active {
 
 .sidebar-list a::after {
   content: "";
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 2px;
   position: absolute;
-  bottom: 7px;
-  left: -20px;
+  bottom: 10px;
+  left: -22px;
   display: block;
   width: 100%;
   text-align: center;
@@ -136,7 +136,7 @@ a.ga-icon::after {
 
 .li-icon {
   position: absolute;
-  top: 7%;
+  top: 6.5%;
   right: 2%;
 }
 
@@ -155,7 +155,8 @@ a.li-icon::after {
 .about-p {
   margin: 5%;
   line-height: 1.5;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  text-indent: 15px;
 }
 
 .about-pic {
@@ -446,8 +447,8 @@ a.book-proj::after {
 
 @media all and (max-width: 800px) {
   body {
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   .nav-bar a {
@@ -540,7 +541,7 @@ a.book-proj::after {
 
   .about-p {
     margin: 5%;
-    font-size: 1em;
+    font-size: .95em;
     width: 85%;
   }
 

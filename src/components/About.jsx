@@ -5,20 +5,24 @@ export default function About() {
     <>
       <h1 className="about-head">About Me</h1>
       <div className="about-grid">
-      <img src={ProfilePicture} alt="me" className="about-pic"></img>
+        <img src={ProfilePicture} alt="me" className="about-pic"></img>
         <p className="about-p">
-          For the past few years I've been in the solar industry and the tree
-          industry. Earlier this year I started looking into coding and shortly
-          after I earned a certificate in full-stack development.
+        Hello! My name is Codey, and I am an aspiring web developer with a
+          background as an apprentice electrician. I have always had a passion
+          for technology and its ability to solve complex problems, and I have
+          found that web development is the perfect way for me to use my skills
+          and experience to make a positive impact.
           </p>
           <p className="about-p">
-          My experience as an electrical apprentice taught me good
-          communication, great problem-solving skills, and how to work well in a
-          team. I can handle all challenges head-on and due to my high work
-          ethic, ensure that I complete the task successfully. My end goal is to
-          work my way up the ladder in leadership and hopefully, inspire others.
+          As an apprentice electrician, I have gained hands-on experience
+          working with complex systems, and I have a strong understanding of the
+          technical concepts and processes that are necessary for success in the
+          industry. I am excited to bring this experience to my work as a web
+          developer, and I am confident that I can help businesses and
+          organizations achieve their goals through cutting-edge web solutions.
         </p>
       </div>
     </>
   );
 }
+
