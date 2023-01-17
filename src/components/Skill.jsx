@@ -30,6 +30,27 @@ export default function Skill() {
         </a>
       </div>
       <div className="skills">
+        <h1>Known Technologies</h1>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>jQuery</p>
+        <p>Bootstrap</p>
+        <p>Bulma</p>
+        <p>Node.js</p>
+        <p>Express</p>
+        <p>MySQL</p>
+        <p>MongoDB</p>
+        <p>JSON</p>
+        <p>Git</p>
+        <p>APIs</p>
+        <p>REST</p>
+        <p>React</p>
+        <p>Agile</p>
+        <p>Apollo GraphQL</p>
+        <p>Handlebars</p>
+      </div>
+      {/* <div className="skills">
         <h1>Skills</h1>
         <ul className="tech-grid">
           <li>
@@ -129,7 +150,7 @@ export default function Skill() {
             </div>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className="certificates">
         <h1>Certificates</h1>
         <p>

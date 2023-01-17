@@ -156,7 +156,7 @@ a.li-icon::after {
   margin: 5%;
   line-height: 1.5;
   font-size: 1.4em;
-  text-indent: 15px;
+  text-indent: 20px;
 }
 
 .about-pic {
@@ -245,7 +245,7 @@ a.li-icon::after {
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 10% 5% 0;
+  margin: 8% 5% 0;
   text-align: center;
   gap: 5%;
   font-size: 1.2em;
@@ -341,8 +341,24 @@ a.credly-link::after {
   color: var(--color3);
 }
 /* ===========================TECH============================== */
-.skills ul {
-  list-style: none;
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px auto;
+  column-gap: 5px;
+  background-color: var(--color3);
+  border-radius: 10px;
+  color: var(--color2);
+  font-weight: bold;
+}
+
+.skills h1 {
+  grid-column: span 3;
+}
+
+.skills p {
+  font-size: 20px;
 }
 
 .tech-grid {
