@@ -365,85 +365,67 @@ a.credly-link::after {
 .project-set {
   width: 100vw;
   height: 90vh;
-  margin-top: 3.8%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+  gap: 5%;
+  padding: 5px;
 }
 
-.project-set img {
-  max-width: 380px;
-  height: 98%;
-}
-.project-set a:hover img {
-  opacity: 0.1;
-}
-
-.project-set a:hover::after {
-  opacity: 1;
-  color: var(--color4);
-  line-height: 2;
-}
-
-.e-proj,
-.orm-proj,
-.note-proj,
-.tech-proj,
-.scribe-proj,
-.task-proj,
-.hang-proj,
-.book-proj {
+.image-container {
   position: relative;
+  width: 300px; /* adjust width as needed */
+  height: 200px; /* adjust height as needed */
 }
 
-a.e-proj::after {
-  content: "MySQL Employee Tracker";
-  top: -220px;
-  left: 10px;
-  width: 95%;
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-a.orm-proj::after {
-  content: "ORM E-commerece backend";
-  top: -230px;
-  left: 10px;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8); /* adjust background color and opacity as needed */
+  color: var(--color2);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-a.note-proj::after {
-  content: "Just Another Text Editor";
-  top: -200px;
-  left: 10px;
+.text {
+  text-align: center;
+  font-size: 20px; /* adjust font size as needed */
+  /* margin-bottom: 5px; adjust margin as needed */
+  margin: 0 0 5px;
 }
 
-a.tech-proj::after {
-  content: "TechTalk a tech blog";
-  top: -200px;
-  left: 15px;
+.overlay a {
+  color: var(--color2);
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  right: 90px;
+  font-size: 30px;
 }
 
-a.scribe-proj::after {
-  content: "Scribe a travel journal";
-  top: -200px;
-  left: 2px;
+.overlay a:nth-child(even) {
+  left: 90px;
 }
 
-a.task-proj::after {
-  content: "onTask a project manager";
-  top: -200px;
-  left: 5px;
+.image-container:hover .overlay {
+  visibility: visible;
+  opacity: 1;
 }
 
-a.hang-proj::after {
-  content: "Star Wars Hangman";
-  top: -180px;
-  left: 10px;
-}
-
-a.book-proj::after {
-  content: "Book Search w/ Google Books API";
-  top: -180px;
-  left: 50px;
-  width: 70%;
-}
 
 @media all and (max-width: 800px) {
   body {
@@ -645,49 +627,4 @@ a.book-proj::after {
     max-width: 100%;
     height: 100%;
   }
-}
-
-.image-container {
-  position: relative;
-  width: 300px; /* adjust width as needed */
-  height: 200px; /* adjust height as needed */
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5); /* adjust background color and opacity as needed */
-  color: white;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.text {
-  text-align: center;
-  font-size: 24px; /* adjust font size as needed */
-  margin-bottom: 10px; /* adjust margin as needed */
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.image-container:hover .overlay {
-  visibility: visible;
-  opacity: 1;
 }
