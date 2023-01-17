@@ -646,3 +646,48 @@ a.book-proj::after {
     height: 100%;
   }
 }
+
+.image-container {
+  position: relative;
+  width: 300px; /* adjust width as needed */
+  height: 200px; /* adjust height as needed */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust background color and opacity as needed */
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.text {
+  text-align: center;
+  font-size: 24px; /* adjust font size as needed */
+  margin-bottom: 10px; /* adjust margin as needed */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.image-container:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
