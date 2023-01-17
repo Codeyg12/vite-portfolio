@@ -30,7 +30,11 @@ export default function Project() {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a rel="noreferrer" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/1tDfVWBk5Ad54AIqF8rVydW3fVekvWF3I/view"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLink} />
           </a>
         </div>
@@ -89,7 +93,11 @@ export default function Project() {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a rel="noreferrer" target="_blank">
+          <a
+            href="https://pppreap.github.io/project1/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLink} />
           </a>
         </div>
@@ -129,7 +137,11 @@ export default function Project() {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a rel="noreferrer" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/146Tm47Vuk9i1XhDXDfVfXm2nUeoxAy_4/view"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLink} />
           </a>
         </div>
@@ -149,7 +161,11 @@ export default function Project() {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a rel="noreferrer" target="_blank">
+          <a
+            href="https://codeyg12.github.io/hangmanReact/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLink} />
           </a>
         </div>
