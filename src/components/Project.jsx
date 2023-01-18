@@ -53,7 +53,11 @@ export default function Project() {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a rel="noreferrer" target="_blank">
+          <a
+            href="https://desolate-eyrie-88770.herokuapp.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLink} />
           </a>
         </div>
@@ -73,7 +77,11 @@ export default function Project() {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a rel="noreferrer" target="_blank">
+          <a
+            href="https://lit-fjord-80121.herokuapp.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLink} />
           </a>
         </div>
@@ -117,7 +125,11 @@ export default function Project() {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a rel="noreferrer" target="_blank">
+          <a
+            href="https://shrouded-plateau-59524.herokuapp.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLink} />
           </a>
         </div>
@@ -185,7 +197,11 @@ export default function Project() {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a rel="noreferrer" target="_blank">
+          <a
+            href="https://protected-thicket-21156.herokuapp.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLink} />
           </a>
         </div>

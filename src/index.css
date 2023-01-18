@@ -1,5 +1,5 @@
 :root {
-  --color1: #2f414f;
+  --color1: #304250;
   --color2: #f1f1ef;
   --color3: #3894a3;
   --color4: #c7dad4;
@@ -384,14 +384,15 @@ a.credly-link::after {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   place-content: center;
-  gap: 5%;
+  row-gap: 5%;
   padding: 5px;
+  margin: 5px;
 }
 
 .image-container {
   position: relative;
-  width: 300px; /* adjust width as needed */
-  height: 200px; /* adjust height as needed */
+  width: 350px;
+  height: 250px; 
 }
 
 .image-container img {
@@ -406,7 +407,7 @@ a.credly-link::after {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.8); /* adjust background color and opacity as needed */
+  background: rgba(47, 65, 79, .9); /* adjust background color and opacity as needed */
   color: var(--color2);
   visibility: hidden;
   opacity: 0;
@@ -419,8 +420,7 @@ a.credly-link::after {
 
 .text {
   text-align: center;
-  font-size: 20px; /* adjust font size as needed */
-  /* margin-bottom: 5px; adjust margin as needed */
+  font-size: 20px;
   margin: 0 0 5px;
 }
 
@@ -429,12 +429,15 @@ a.credly-link::after {
   text-decoration: none;
   position: absolute;
   bottom: 10px;
-  right: 90px;
   font-size: 30px;
 }
 
 .overlay a:nth-child(even) {
-  left: 90px;
+  left: 100px;
+}
+
+.overlay a:nth-child(odd) {
+  right: 100px;
 }
 
 .image-container:hover .overlay {
