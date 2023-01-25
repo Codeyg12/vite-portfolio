@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Project from "./components/Project";
+import Project from "./components/Project/Project";
 import Skill from "./components/Skill/Skill";
 import Layout from "./components/Layout";
 import Grasshopper from "./components/Grasshopper";
