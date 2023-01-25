@@ -13,91 +13,6 @@ body {
   display: block;
 }
 
-/* ----------------------------------------------NAVBAR---------------------------------------------------------- */
-.nav-bar {
-  position: absolute;
-  top: 0;
-  background-color: var(--color3);
-  width: 100%;
-  min-height: 100px;
-}
-
-.nav-bar a {
-  font-size: 38px;
-  color: var(--color4);
-}
-
-.nav-bar a:hover svg,
-.sidebar-list a:hover svg {
-  opacity: 0;
-}
-
-.nav-bar a:hover::after,
-.sidebar-list a:hover::after {
-  opacity: 1;
-}
-
-.nav-bar a::after,
-.certs-list a::after,
-.project-set a::after {
-  content: "";
-  font-size: 30px;
-  letter-spacing: 2px;
-  position: absolute;
-  bottom: 0;
-  left: -30px;
-  display: block;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.about-link {
-  position: absolute;
-  top: 30%;
-  left: 25%;
-}
-
-a.about-link::after {
-  content: "ABOUT";
-}
-
-.skill-link {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-}
-
-a.skill-link::after {
-  content: "SKILLS";
-}
-
-.project-link {
-  position: absolute;
-  top: 30%;
-  left: 55%;
-}
-
-a.project-link::after {
-  content: "PROJECTS";
-}
-
-.contact-link {
-  position: absolute;
-  top: 30%;
-  left: 70%;
-}
-
-a.contact-link::after {
-  content: "CONTACT";
-}
-
-a.active {
-  color: var(--color1);
-}
-
 /* -----------------------------------------------SIDEBAR------------------------------------------------------ */
 
 .sidebar-list {
@@ -126,8 +41,8 @@ a.active {
 
 .ga-icon {
   position: absolute;
-  top: 2%;
-  right: 2%;
+  top: 15px;
+  right: 30px;
 }
 
 a.ga-icon::after {
@@ -136,8 +51,8 @@ a.ga-icon::after {
 
 .li-icon {
   position: absolute;
-  top: 6.5%;
-  right: 2%;
+  top: 55px;
+  right: 30px;
 }
 
 a.li-icon::after {
@@ -150,71 +65,6 @@ a.li-icon::after {
     overflow-y: scroll;
   }
 
-  .nav-bar a {
-    font-size: 25px;
-  }
-
-  .nav-bar a::after,
-  .certs-list a::after,
-  .project-set a::after {
-    content: "";
-    font-size: 15px;
-    letter-spacing: 2px;
-    position: absolute;
-    bottom: 5px;
-    left: -20px;
-    display: block;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-  }
-
-  .about-link {
-    position: absolute;
-    top: 35%;
-    left: 15%;
-  }
-
-  a.about-link::after {
-    content: "ABOUT";
-  }
-
-  .skill-link {
-    position: absolute;
-    top: 35%;
-    left: 30%;
-  }
-
-  a.skill-link::after {
-    content: "SKILLS";
-  }
-
-  .project-link {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-  }
-
-  a.project-link::after {
-    content: "PROJECTS";
-  }
-
-  .contact-link {
-    position: absolute;
-    top: 35%;
-    left: 70%;
-  }
-
-  a.contact-link::after {
-    content: "CONTACT";
-  }
-
-  a.active {
-    color: var(--color1);
-  }
-
   /* -----------------------------------------------SIDEBAR------------------------------------------------------ */
   .sidebar-list a {
     font-size: 18px;
@@ -222,13 +72,13 @@ a.li-icon::after {
 
   .ga-icon {
     position: absolute;
-    top: 2%;
-    right: 2.5%;
+    top: 20px;
+    right: 25px;
   }
 
   .li-icon {
     position: absolute;
-    top: 7%;
-    right: 2.5%;
+    top: 55px;
+    right: 25px;
   }
 }
