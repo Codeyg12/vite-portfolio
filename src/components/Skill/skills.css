@@ -1,0 +1,196 @@
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 8% 5% 0;
+  text-align: center;
+  gap: 5%;
+  font-size: 1.2em;
+}
+
+/* ===============CERTS========================== */
+.sololearn-icon {
+  width: 100px;
+  color: var(--color3);
+}
+
+.certificates a {
+  font-size: 500%;
+  color: var(--color2);
+}
+
+.certs-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25%;
+  margin-top: 10%;
+}
+
+.certs-list a:hover svg {
+  opacity: 0;
+}
+
+.certs-list a:hover .sololearn-icon {
+  opacity: 0;
+}
+
+.certs-list a:hover::after {
+  opacity: 1;
+}
+
+.fcc-link,
+.sololearn-link,
+.grasshopper-link,
+.credly-link {
+  position: relative;
+}
+
+a.fcc-link::after {
+  content: "freeCodeCamp";
+  top: 30%;
+}
+
+a.sololearn-link::after {
+  content: "Sololearn";
+  top: 30%;
+  left: 3%;
+}
+
+a.grasshopper-link::after {
+  content: "Grasshopper";
+  top: 28%;
+}
+
+a.credly-link::after {
+  content: "Credly";
+  top: 25%;
+  left: 6%;
+}
+
+.gh-list {
+  display: grid;
+  justify-items: center;
+  margin: 6% 10% 0;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 5%;
+}
+
+.gh-image {
+  width: 280px;
+  height: 270px;
+}
+
+.gh-large {
+  width: 250px;
+}
+
+/* ==============RESUME===================== */
+.resume-section {
+  line-height: 1.5;
+}
+
+.resume-section a {
+  color: var(--color2);
+  text-decoration: none;
+}
+
+.resume-section a:hover {
+  color: var(--color3);
+}
+/* ===========================TECH============================== */
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px auto;
+  column-gap: 5px;
+  background-color: var(--color3);
+  border-radius: 10px;
+  color: var(--color2);
+  font-weight: bold;
+}
+
+.skills h1 {
+  grid-column: span 3;
+}
+
+.skills p {
+  font-size: 20px;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+}
+
+.progress {
+  margin-top: 2%;
+  background-color: var(--color4);
+}
+
+.inner-prog {
+  background-color: var(--color3);
+  height: 25px;
+}
+
+@media all and (max-width: 800px) {
+  .skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12% 5% 0;
+    font-size: 1em;
+  }
+
+  .skill-grid h1 {
+    font-size: 1.5em;
+  }
+
+  /* ===============CERTS========================== */
+
+  .certificates a {
+    font-size: 300%;
+  }
+
+  .certificates p {
+    width: 90%;
+  }
+
+  .certs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15%;
+    margin: 10% 5% 0;
+    padding: 0;
+  }
+
+  .sololearn-icon {
+    width: 60px;
+  }
+
+  .gh-list {
+    margin: 20% 0;
+    grid-template-columns: 1fr;
+    row-gap: 1%;
+  }
+
+  /* ==============RESUME===================== */
+  .resume-section {
+    line-height: 1;
+    width: 95%;
+  }
+
+  /* ===========================TECH============================== */
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+  }
+
+  .inner-prog {
+    height: 20px;
+  }
+
+  .apollo {
+    white-space: nowrap;
+  }
+}
