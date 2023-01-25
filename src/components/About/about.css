@@ -23,16 +23,17 @@
     margin-top: 25%;
     font-size: 2rem;
   }
-
+  
   .about-p {
     margin: 5%;
     font-size: 0.95em;
     width: 85%;
   }
-
+  
   .about-pic {
     float: left;
     border-radius: 25%;
     width: 30%;
+    margin: auto 10%;
   }
 }
