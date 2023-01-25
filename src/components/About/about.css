@@ -1,0 +1,38 @@
+.about-head {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+  font-size: 3rem;
+}
+
+.about-p {
+  margin: 5%;
+  line-height: 1.5;
+  font-size: 1.4em;
+  text-indent: 20px;
+}
+
+.about-pic {
+  float: left;
+  margin: -50px 10%;
+  border-radius: 25%;
+}
+
+@media all and (max-width: 800px) {
+  .about-head {
+    margin-top: 25%;
+    font-size: 2rem;
+  }
+
+  .about-p {
+    margin: 5%;
+    font-size: 0.95em;
+    width: 85%;
+  }
+
+  .about-pic {
+    float: left;
+    border-radius: 25%;
+    width: 30%;
+  }
+}

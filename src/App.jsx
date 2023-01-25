@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router";
-import About from "./components/About";
+import About from "./components/About/About";
 import Contact from "./components/Contact";
 import Project from "./components/Project";
 import Skill from "./components/Skill";

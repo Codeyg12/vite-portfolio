@@ -144,27 +144,6 @@ a.li-icon::after {
   content: "LinkedIn";
 }
 
-/* --------------------------------------------------ABOUT---------------------------------------------------- */
-.about-head {
-  display: flex;
-  justify-content: center;
-  margin-top: 6%;
-  font-size: 3rem;
-}
-
-.about-p {
-  margin: 5%;
-  line-height: 1.5;
-  font-size: 1.4em;
-  text-indent: 20px;
-}
-
-.about-pic {
-  float: left;
-  margin: auto 10%;
-  border-radius: 25%;
-}
-
 /* -----------------------------------------------------CONTACT------------------------------------------ */
 .contact-container {
   display: grid;
@@ -534,24 +513,6 @@ a.credly-link::after {
     right: 2.5%;
   }
   
-  /* ----------------------------ABOUT--------------------------------------------- */
-  .about-head {
-    margin-top: 25%;
-    font-size: 2rem;
-  }
-
-  .about-p {
-    margin: 5%;
-    font-size: .95em;
-    width: 85%;
-  }
-
-  .about-pic {
-    float: left;
-    border-radius: 25%;
-    width: 30%;
-  }
-
   /* -------------------------------------------CONTACT---------------------------------------------------------------- */
   .contact-container {
     display: flex;
