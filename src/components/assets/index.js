@@ -6,5 +6,6 @@ import OnTask from "./ontask.png";
 import Employee from "./mysqletrack.png";
 import Hangman from "./starhang.png";
 import Book from "./booksearch.png";
+import Weather from './weather.png'
 
-export { ORM, Jate, TechTalk, Scribe, OnTask, Employee, Hangman, Book };
+export { ORM, Jate, TechTalk, Scribe, OnTask, Employee, Hangman, Book, Weather };

@@ -7,6 +7,7 @@ import {
   Employee,
   Hangman,
   Book,
+  Weather
 } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -200,6 +201,30 @@ export default function Project() {
           </a>
           <a
             href="https://protected-thicket-21156.herokuapp.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faLink} />
+          </a>
+        </div>
+      </div>
+      <div className="image-container">
+        <img src={Weather} alt="Weather App" />
+        <div className="overlay">
+          <div className="text">
+            Weather Dashboard
+            <br />
+            HTML, CSS, JavaScript
+          </div>
+          <a
+            href="https://github.com/Codeyg12/weather"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a
+            href="https://codeyg12.github.io/weather/"
             rel="noreferrer"
             target="_blank"
           >

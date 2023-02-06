@@ -2,17 +2,16 @@
   width: 100vw;
   height: 90vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   place-content: center;
-  row-gap: 5%;
-  padding: 5px;
-  margin: 5px;
+  gap: 3%;
+  margin: 45px 90px;
 }
 
 .image-container {
   position: relative;
-  width: 350px;
-  height: 250px;
+  width: 330px;
+  height: 180px;
 }
 
 .image-container img {
@@ -72,7 +71,7 @@
 
 @media all and (max-width: 800px) {
   .project-set {
-    margin-top: 850px;
+    margin: 600px 50px;
     grid-template-columns: 1fr;
   }
 
