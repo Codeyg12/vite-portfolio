@@ -70,8 +70,12 @@
 }
 
 @media all and (max-width: 800px) {
+  html {
+    overflow-x: hidden;
+  }
+
   .project-set {
-    margin: 600px 50px;
+    margin: 600px 40px;
     grid-template-columns: 1fr;
   }
 
