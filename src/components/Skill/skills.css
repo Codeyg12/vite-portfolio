@@ -10,7 +10,6 @@
 /* ===============CERTS========================== */
 .sololearn-icon {
   width: 100px;
-  color: var(--color3);
 }
 
 .certificates a {
@@ -25,11 +24,7 @@
   margin-top: 10%;
 }
 
-.certs-list a:hover svg {
-  opacity: 0;
-}
-
-.certs-list a:hover .sololearn-icon {
+.certs-list a:hover svg, .certs-list a:hover .sololearn-icon {
   opacity: 0;
 }
 
