@@ -39,28 +39,6 @@
   position: relative;
 }
 
-a.fcc-link::after {
-  content: "freeCodeCamp";
-  top: 30%;
-}
-
-a.sololearn-link::after {
-  content: "Sololearn";
-  top: 30%;
-  left: 3%;
-}
-
-a.grasshopper-link::after {
-  content: "Grasshopper";
-  top: 28%;
-}
-
-a.credly-link::after {
-  content: "Credly";
-  top: 25%;
-  left: 6%;
-}
-
 .gh-list {
   display: grid;
   justify-items: center;
