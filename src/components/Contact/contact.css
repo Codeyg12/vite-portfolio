@@ -1,17 +1,22 @@
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.5fr;
   text-align: center;
   font-size: 1.2em;
-  margin-top: 10%;
+  margin-top: 8%;
+}
+
+.contact-resume {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  justify-content: space-between;
+  padding: 0 5%;
 }
 
 .contact-header {
   width: 100%;
-  margin-left: 20%;
-  margin-top: 10%;
-  max-height: 70%;
-  padding: 0 5%;
+  max-height: 50%;
 }
 
 .contact-form {
@@ -22,9 +27,8 @@
 .input-form {
   background-color: var(--color4);
   width: 50%;
-  margin-bottom: 5%;
+  max-height: 2em;
   margin-left: 24%;
-  line-height: 2;
   font-size: 1.1em;
 }
 
@@ -71,6 +75,15 @@
 .email-copy {
   text-decoration: none;
   margin-left: 2%;
+}
+
+.resume-section a {
+  color: var(--color2);
+  text-decoration: none;
+}
+
+.resume-section a:hover {
+  color: var(--color3);
 }
 
 @media all and (max-width: 800px) {

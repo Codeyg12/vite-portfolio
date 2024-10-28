@@ -57,7 +57,7 @@
 }
 
 /* ==============RESUME===================== */
-.resume-section {
+/* .resume-section {
   line-height: 1.5;
 }
 
@@ -68,7 +68,13 @@
 
 .resume-section a:hover {
   color: var(--color3);
-}
+} */
+ .most-used {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+ }
 /* ===========================TECH============================== */
 
 .skills {

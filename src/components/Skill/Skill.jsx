@@ -9,26 +9,19 @@ import "./skills.css";
 export default function Skill() {
   return (
     <div className="skill-grid">
-      <div className="resume-section">
-        <h1>Resume</h1>
-        <p>User-focused MERN developer with a knack for fixing bugs</p>
-        <br />
-        <p>
-          Below is a link directly to my Indeed resume or you can click below
-          that to download the resume directly
-        </p>
-        <br />
-        <a
-          href="https://my.indeed.com/p/codeyg-jl644zf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Click here to see resume on Indeed
-        </a>
-        <br />
-        <a href={UpdatedResume} download="Codeys Resume">
-          Click here to download a copy
-        </a>
+      <div className="most-used">
+            <img
+           className="w-full h-auto"
+           src="https://github-readme-stats.vercel.app/api/top-langs/?username=codeyg12&theme=transparent&hide_border=true&title_color=F1F1EF&text_color=F1F1EF&icon_color=F1F1EF&text_bold=false&layout=compact"
+           alt="Github Stats"
+           loading="lazy"
+         />
+        {/* <img
+            className="w-full h-auto"
+            src="https://skillicons.dev/icons?i=html,css,js,jquery,bootstrap,nodejs,express,mysql,mongodb,react,arduino,babel,django,graphql,py,tailwind&perline=5"
+            alt="Skills"
+            loading="lazy"
+          /> */}
       </div>
       <div className="skills">
         <h1>Known Technologies</h1>
