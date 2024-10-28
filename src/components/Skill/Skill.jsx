@@ -10,18 +10,18 @@ export default function Skill() {
   return (
     <div className="skill-grid">
       <div className="most-used">
-            <img
-           className="w-full h-auto"
-           src="https://github-readme-stats.vercel.app/api/top-langs/?username=codeyg12&theme=transparent&hide_border=true&title_color=F1F1EF&text_color=F1F1EF&icon_color=F1F1EF&text_bold=false&layout=compact"
-           alt="Github Stats"
-           loading="lazy"
-         />
+        <img
+          className="w-full h-auto"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=codeyg12&theme=transparent&hide_border=true&title_color=F1F1EF&text_color=F1F1EF&icon_color=F1F1EF&text_bold=false&layout=donut"
+          alt="Github Stats"
+          loading="lazy"
+        />
         {/* <img
-            className="w-full h-auto"
-            src="https://skillicons.dev/icons?i=html,css,js,jquery,bootstrap,nodejs,express,mysql,mongodb,react,arduino,babel,django,graphql,py,tailwind&perline=5"
-            alt="Skills"
-            loading="lazy"
-          /> */}
+          className="w-full h-auto"
+          src="https://skillicons.dev/icons?i=html,css,js,jquery,bootstrap,nodejs,express,mysql,mongodb,react,arduino,babel,django,graphql,py,tailwind&perline=5"
+          alt="Skills"
+          loading="lazy"
+        /> */}
       </div>
       <div className="skills">
         <h1>Known Technologies</h1>

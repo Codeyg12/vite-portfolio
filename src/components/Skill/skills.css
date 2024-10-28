@@ -24,7 +24,8 @@
   margin-top: 10%;
 }
 
-.certs-list a:hover svg, .certs-list a:hover .sololearn-icon {
+.certs-list a:hover svg,
+.certs-list a:hover .sololearn-icon {
   opacity: 0;
 }
 
@@ -69,12 +70,12 @@
 .resume-section a:hover {
   color: var(--color3);
 } */
- .most-used {
+.most-used {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
- }
+}
+
 /* ===========================TECH============================== */
 
 .skills {
