@@ -1,31 +1,5 @@
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 8% 5% 0;
-  text-align: center;
-  gap: 5%;
-  font-size: 1.2em;
-}
-
 /* ===============CERTS========================== */
-.sololearn-icon {
-  width: 100px;
-}
-
-.certificates a {
-  font-size: 500%;
-  color: var(--color2);
-}
-
-.certs-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25%;
-  margin-top: 10%;
-}
-
-.certs-list a:hover svg,
-.certs-list a:hover .sololearn-icon {
+.certs-list a:hover svg {
   opacity: 0;
 }
 
@@ -33,85 +7,7 @@
   opacity: 1;
 }
 
-.fcc-link,
-.sololearn-link,
-.grasshopper-link,
-.credly-link {
-  position: relative;
-}
-
-.gh-list {
-  display: grid;
-  justify-items: center;
-  margin: 6% 10% 0;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 5%;
-}
-
-.gh-image {
-  width: 280px;
-  height: 270px;
-}
-
-.gh-large {
-  width: 250px;
-}
-
-/* ==============RESUME===================== */
-/* .resume-section {
-  line-height: 1.5;
-}
-
-.resume-section a {
-  color: var(--color2);
-  text-decoration: none;
-}
-
-.resume-section a:hover {
-  color: var(--color3);
-} */
-.most-used {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 /* ===========================TECH============================== */
-
-.skills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 10px auto;
-  column-gap: 5px;
-  background-color: var(--color3);
-  border-radius: 10px;
-  color: var(--color2);
-  font-weight: bold;
-}
-
-.skills h1 {
-  grid-column: span 3;
-}
-
-.skills p {
-  font-size: 20px;
-}
-
-.tech-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5%;
-}
-
-.progress {
-  margin-top: 2%;
-  background-color: var(--color4);
-}
-
-.inner-prog {
-  background-color: var(--color3);
-  height: 25px;
-}
 
 @media all and (max-width: 800px) {
   .skill-grid {

@@ -9,229 +9,42 @@ import {
   Book,
   Weather
 } from "../assets";
+import projectData from "./projectData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import "./project.css";
 
+
 export default function Project() {
   return (
-    <div className="project-set">
-      <div className="image-container">
-        <img src={ORM} alt="ORM" />
-        <div className="overlay">
-          <div className="text">
-            ORM E-Commerce
-            <br />
-            MySQL, Express, Insomnia
+    <div className="project-set w-full h-fit grid grid-cols-3 place-items-center gap-y-6  mx-auto">
+      {projectData.map((project, idx) => (
+            <div className="image-container w-80 h-52 relative min-[1800px]:w-96 min-[1800px]:h-72" key={idx}>
+            <img src={project.src} alt={project.alt} className="w-full h-full" />
+            <div className="overlay absolute inset-0 invisible opacity-0 flex justify-center items-center flex-wrap">
+              <div className="text text-center text-xl mb-2">
+                {project.title}
+                <br />
+                {project.tech}
+              </div>
+              <a
+                href={project.githubHref}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a
+                href={project.link}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faLink} />
+              </a>
+            </div>
           </div>
-          <a
-            href="https://github.com/Codeyg12/ORM-E-commerce"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1tDfVWBk5Ad54AIqF8rVydW3fVekvWF3I/view"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLink} />
-          </a>
-        </div>
-      </div>
-      <div className="image-container">
-        <img src={Jate} alt="Jate" />
-        <div className="overlay">
-          <div className="text">
-            Jate <br />
-            JavaScript, Express
-          </div>
-          <a
-            href="https://github.com/Codeyg12/expressNotes"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://desolate-eyrie-88770.herokuapp.com/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLink} />
-          </a>
-        </div>
-      </div>
-      <div className="image-container">
-        <img src={TechTalk} alt="TechTalk" />
-        <div className="overlay">
-          <div className="text">
-            TechTalk
-            <br />
-            Sequelize, MySQL, Express
-          </div>
-          <a
-            href="https://github.com/Codeyg12/MVC-tech-blog"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://lit-fjord-80121.herokuapp.com/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLink} />
-          </a>
-        </div>
-      </div>
-      <div className="image-container">
-        <img src={Scribe} alt="Scribe" />
-        <div className="overlay">
-          <div className="text">
-            Scribe
-            <br />
-            jQuery, Bulma, API
-          </div>
-          <a
-            href="https://github.com/pppreap/project1"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://pppreap.github.io/project1/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLink} />
-          </a>
-        </div>
-      </div>
-      <div className="image-container">
-        <img src={OnTask} alt="OnTask" />
-        <div className="overlay">
-          <div className="text">
-            OnTask
-            <br />
-            MognoDB, React, Express
-          </div>
-          <a
-            href="https://github.com/Codeyg12/onTask"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://shrouded-plateau-59524.herokuapp.com/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLink} />
-          </a>
-        </div>
-      </div>
-      <div className="image-container">
-        <img src={Employee} alt="Employee Tracker" />
-        <div className="overlay">
-          <div className="text">
-            Employee Tracker
-            <br />
-            JavaScript, MySQL, Node
-          </div>
-          <a
-            href="https://github.com/Codeyg12/MySQL-employee-tracker"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://drive.google.com/file/d/146Tm47Vuk9i1XhDXDfVfXm2nUeoxAy_4/view"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLink} />
-          </a>
-        </div>
-      </div>
-      <div className="image-container">
-        <img src={Hangman} alt="Hangman" />
-        <div className="overlay">
-          <div className="text">
-            Hangman
-            <br />
-            Vite, React
-          </div>
-          <a
-            href="https://github.com/Codeyg12/hangmanReact"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://codeyg12.github.io/hangmanReact/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLink} />
-          </a>
-        </div>
-      </div>
-      <div className="image-container">
-        <img src={Book} alt="Book Search" />
-        <div className="overlay">
-          <div className="text">
-            Book Search
-            <br />
-            MongoDB, React, ApolloGraphQL
-          </div>
-          <a
-            href="https://github.com/Codeyg12/MERN-book-search-engine"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://protected-thicket-21156.herokuapp.com/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLink} />
-          </a>
-        </div>
-      </div>
-      <div className="image-container">
-        <img src={Weather} alt="Weather App" />
-        <div className="overlay">
-          <div className="text">
-            Weather Dashboard
-            <br />
-            HTML, CSS, JavaScript
-          </div>
-          <a
-            href="https://github.com/Codeyg12/weather"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://codeyg12.github.io/weather/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLink} />
-          </a>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

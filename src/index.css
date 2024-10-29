@@ -1,8 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --color1: #304250;
   --color2: #f1f1ef;
-  --color3: #3894a3;
-  --color4: #c7dad4;
+  --color3: #3894a3; /* bg-cyan-600 */
+  --color4: #c7dad4; /*ext-slate-200  */
 }
 
 body {
@@ -15,21 +19,12 @@ body {
 
 /* -----------------------------------------------SIDEBAR------------------------------------------------------ */
 
-.sidebar-list {
-  padding: 13px;
-}
-
-.sidebar-list a {
-  font-size: 30px;
-  color: var(--color4);
-}
-
 .sidebar-list a::after {
   content: "";
   font-size: 16px;
   letter-spacing: 2px;
   position: absolute;
-  bottom: 10px;
+  bottom: 2px;
   left: -22px;
   display: block;
   width: 100%;
@@ -39,20 +34,8 @@ body {
   transition: all 0.3s ease-out;
 }
 
-.ga-icon {
-  position: absolute;
-  top: 15px;
-  right: 30px;
-}
-
 a.ga-icon::after {
   content: "GitHub";
-}
-
-.li-icon {
-  position: absolute;
-  top: 55px;
-  right: 30px;
 }
 
 a.li-icon::after {
@@ -85,22 +68,5 @@ a.credly-link::after {
   body {
     overflow-x: hidden;
     overflow-y: scroll;
-  }
-
-  /* -----------------------------------------------SIDEBAR------------------------------------------------------ */
-  .sidebar-list a {
-    font-size: 18px;
-  }
-
-  .ga-icon {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-  }
-
-  .li-icon {
-    position: absolute;
-    top: 55px;
-    right: 25px;
   }
 }

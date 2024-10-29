@@ -8,12 +8,12 @@ export default function Contact() {
   const form = useRef();
   // Starts the contact form blank
   const [contactFormState, setContactFormState] = useState({
-    name: "",
     email: "",
+    subject: "",
     message: "",
   });
   const [errorMessage, setErrorMessage] = useState("");
-  const { name, email, message } = contactFormState;
+  const { email, subject, message } = contactFormState;
 
   function handleContact(e) {
     // Checks if all fields have been entered and validating email
@@ -61,8 +61,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact-container">
-      <div className="contact-resume">
+    <div className="contact-container grid grid-cols-5 text-center h-4/5 gap-x-28 text-xl">
+      <div className="contact-resume flex flex-col justify-evenly ml-2 pl-20 col-span-2">
         <div className="contact-header">
           <h1 className="contact-head">Contact Me</h1>
           <p>
@@ -74,7 +74,7 @@ export default function Contact() {
           </p>
           <span>Email:</span>
           <abbr
-            className="email-copy"
+            className="email-copy cursor-copy"
             onClick={() =>
               navigator.clipboard.writeText("codey.gallup@gmail.com")
             }
@@ -105,41 +105,49 @@ export default function Contact() {
         </div>
       </div>
 
-      <form className="contact-form" ref={form} onSubmit={sendEmail}>
-        <input
-          className="input-form"
-          type="text"
-          name="name"
-          defaultValue={name}
-          onBlur={handleContact}
-          placeholder="Name"
-        />
-
-        <input
-          className="input-form"
-          type="email"
-          name="email"
-          defaultValue={email}
-          onBlur={handleContact}
-          placeholder="Email"
-        />
-        <div className="long-grid">
+      <form className="contact-form space-y-8 col-span-3 place-content-center mx-20" ref={form} onSubmit={sendEmail}>
+        <div>
+          <label htmlFor="email" className="block">
+            Email
+          </label>
+          <input
+            className="input-form block w-full"
+            type="email"
+            name="email"
+            defaultValue={email}
+            onBlur={handleContact}
+            placeholder="example@email.com"
+          />
+        </div>
+        <div>
+          <label htmlFor="subject" className="block">
+            Subject
+          </label>
+          <input
+            className="input-form block w-full"
+            type="text"
+            name="subject"
+            defaultValue={subject}
+            onBlur={handleContact}
+            placeholder="What would you like to discuss?"
+          />
+        </div>
+        <div className="">
+          <label htmlFor="message" className="block">
+            Your message
+          </label>
           <textarea
-            className="contact-text"
+            className="input-form block w-full"
+            // className="contact-text w-full h-60"
             name="message"
+            rows={10}
             defaultValue={message}
             onBlur={handleContact}
             placeholder="Enter message here..."
           />
         </div>
-        {errorMessage && (
-          <div className="long-grid">
-            <p className="contact-err">{errorMessage}</p>
-          </div>
-        )}
-        <div className="long-grid">
-          <input className="contact-btn" type="submit" value="Send Message" />
-        </div>
+        {errorMessage && <p className="contact-err">{errorMessage}</p>}
+          <button type="submit" className="">Send Message</button>
       </form>
     </div>
   );
