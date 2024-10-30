@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import { validateEmail } from "../utils/helper";
 import emailjs from "@emailjs/browser";
-import "./contact.css";
 import UpdatedResume from "../assets/updatedResume.pdf";
 
 export default function Contact() {
@@ -48,7 +47,7 @@ export default function Contact() {
         "service_r9ozccg",
         "template_i728ryi",
         e.target,
-        "cRjguA3pkusSgJPh5"
+        "cRjguA3pkusSgJPh5",
       )
       .then(
         (result) => {
@@ -56,15 +55,15 @@ export default function Contact() {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   };
 
   return (
-    <div className="contact-container grid grid-cols-5 text-center h-4/5 gap-x-28 text-xl">
-      <div className="contact-resume flex flex-col justify-evenly ml-2 pl-20 col-span-2">
-        <div className="contact-header">
-          <h1 className="contact-head">Contact Me</h1>
+    <div className="mx-5 flex flex-col items-center text-center text-lg md:mt-10 md:grid md:grid-cols-5 md:gap-x-28 md:text-xl">
+      <div className="col-span-2 md:ml-2 md:pl-10">
+        <div className="mb-10">
+          <h1 className="">Contact Me</h1>
           <p>
             I'm actively looking for a career in web development and would love
             to hear from you! You are always welcome to email me directly at the
@@ -74,7 +73,7 @@ export default function Contact() {
           </p>
           <span>Email:</span>
           <abbr
-            className="email-copy cursor-copy"
+            className="ml-2 cursor-copy no-underline hover:text-cyan-600"
             onClick={() =>
               navigator.clipboard.writeText("codey.gallup@gmail.com")
             }
@@ -85,13 +84,14 @@ export default function Contact() {
           <address>Colorado Springs, CO 80903</address>
         </div>
 
-        <div className="resume-section">
+        <div className="resume-section mb-10">
           <h1>Resume</h1>
           <p>
             Below is a link directly to my Indeed resume or you can click below
             that to download the resume directly
           </p>
           <a
+            className="text-gray-200 no-underline hover:text-cyan-600"
             href="https://my.indeed.com/p/codeyg-jl644zf"
             target="_blank"
             rel="noreferrer"
@@ -99,19 +99,27 @@ export default function Contact() {
             Click here to see resume on Indeed
           </a>
           <br />
-          <a href={UpdatedResume} download="Codeys Resume">
+          <a
+            className="text-gray-200 no-underline hover:text-cyan-600"
+            href={UpdatedResume}
+            download="Codeys Resume"
+          >
             Click here to download a copy
           </a>
         </div>
       </div>
 
-      <form className="contact-form space-y-8 col-span-3 place-content-center mx-20" ref={form} onSubmit={sendEmail}>
+      <form
+        className="mb-6 w-full space-y-6 md:col-span-3 md:space-y-8"
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <div>
           <label htmlFor="email" className="block">
             Email
           </label>
           <input
-            className="input-form block w-full"
+            className="block w-full bg-slate-300 placeholder:text-gray-800 focus:outline-cyan-600"
             type="email"
             name="email"
             defaultValue={email}
@@ -124,7 +132,7 @@ export default function Contact() {
             Subject
           </label>
           <input
-            className="input-form block w-full"
+            className="block w-full bg-slate-300 placeholder:text-gray-800 focus:outline-cyan-600"
             type="text"
             name="subject"
             defaultValue={subject}
@@ -137,8 +145,7 @@ export default function Contact() {
             Your message
           </label>
           <textarea
-            className="input-form block w-full"
-            // className="contact-text w-full h-60"
+            className="block w-full bg-slate-300 placeholder:text-gray-800 focus:outline-cyan-600"
             name="message"
             rows={10}
             defaultValue={message}
@@ -146,8 +153,10 @@ export default function Contact() {
             placeholder="Enter message here..."
           />
         </div>
-        {errorMessage && <p className="contact-err">{errorMessage}</p>}
-          <button type="submit" className="">Send Message</button>
+        {errorMessage && <p className="text-red-600">{errorMessage}</p>}
+        <button type="submit" className="">
+          Send Message
+        </button>
       </form>
     </div>
   );

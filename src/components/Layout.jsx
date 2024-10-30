@@ -3,13 +3,11 @@ import Navbar from "./Navbar/Navbar";
 
 export default function Layout() {
   return (
-    <>
-    <div className="pt-10">
+    <div className="flex min-h-screen flex-col">
       <Navbar />
-      <div className="h-screen flex items-center">
-      <Outlet />
+      <div className="flex flex-grow items-center justify-center pt-32">
+        <Outlet />
       </div>
     </div>
-    </>
   );
 }
